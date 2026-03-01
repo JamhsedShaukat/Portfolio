@@ -97,45 +97,47 @@ document.addEventListener("DOMContentLoaded", () => {
   // TYPING ANIMATION
   // ================================
   const typingElement = document.getElementById("typingText");
-  const words = [
-    "MERN Stack Developer",
-    "Full-Stack Engineer",
-    "React.js Developer",
-    "Next.js Developer",
-    "AI Integrator",
-  ];
+  if (typingElement) {
+    const words = [
+      "MERN Stack Developer",
+      "Full-Stack Engineer",
+      "React.js Developer",
+      "Next.js Developer",
+      "AI Integrator",
+    ];
 
-  let wordIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
-  let typeSpeed = 100;
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typeSpeed = 100;
 
-  function typeEffect() {
-    const currentWord = words[wordIndex];
+    function typeEffect() {
+      const currentWord = words[wordIndex];
 
-    if (isDeleting) {
-      typingElement.textContent = currentWord.substring(0, charIndex - 1);
-      charIndex--;
-      typeSpeed = 50;
-    } else {
-      typingElement.textContent = currentWord.substring(0, charIndex + 1);
-      charIndex++;
-      typeSpeed = 100;
+      if (isDeleting) {
+        typingElement.textContent = currentWord.substring(0, charIndex - 1);
+        charIndex--;
+        typeSpeed = 50;
+      } else {
+        typingElement.textContent = currentWord.substring(0, charIndex + 1);
+        charIndex++;
+        typeSpeed = 100;
+      }
+
+      if (!isDeleting && charIndex === currentWord.length) {
+        isDeleting = true;
+        typeSpeed = 2000; // Pause before deleting
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        typeSpeed = 500; // Pause before typing next
+      }
+
+      setTimeout(typeEffect, typeSpeed);
     }
 
-    if (!isDeleting && charIndex === currentWord.length) {
-      isDeleting = true;
-      typeSpeed = 2000; // Pause before deleting
-    } else if (isDeleting && charIndex === 0) {
-      isDeleting = false;
-      wordIndex = (wordIndex + 1) % words.length;
-      typeSpeed = 500; // Pause before typing next
-    }
-
-    setTimeout(typeEffect, typeSpeed);
+    typeEffect();
   }
-
-  typeEffect();
 
   // ================================
   // SCROLL REVEAL ANIMATION
