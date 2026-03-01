@@ -1,365 +1,1157 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jamshed Shaukat — MERN Stack Developer</title>
+    <meta
+      name="description"
+      content="Jamshed Shaukat — MERN Stack Developer specializing in Next.js, React.js, Node.js, MongoDB, and Generative AI integration."
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
-    <link rel="icon" class="favicon" href="favicon.ico" type="image/x-icon">
-    <title>JamshedShaukat-portfolio</title>
+  <body>
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
 
-    <!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Typed.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-
-<!-- Owl Carousel -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-
-</head>
-
-<body>
-    <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
-    </div>
-
-    <!-- Header -->
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#"><span>Jamshed's</span><span></span></a></div>
-            <ul class="menu">
-                <li><a href="#home" class="menu-btn"><strong>Home</strong></a></li>
-                <li><a href="#about" class="menu-btn"><strong>About</strong></a></li>
-                <li><a href="#services" class="menu-btn"><strong>Services</strong></a></li>
-                <li><a href="#skills" class="menu-btn"><strong>Skills</strong></a></li>
-                <li><a href="#projects" class="menu-btn"><strong>Projects</strong></a></li>
-                <li><a href="#contact" class="menu-btn"><strong>Contact</strong></a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>JS<span class="logo-bracket">
+            /&gt;</span
+          >
+        </a>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">Let's Talk</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </nav>
-    
-    <!-- Home -->
-     
 
- 
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Wellcome, This is</div>
-                <div class="text-2">Jamshed Shaukat</div>
-                <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a href="#contact">Hire me</a>
-            </div>
-            <div class="profile-pic">
-                <div class="container"></div>
-            </div>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-container">
+        <div class="hero-badge">
+          <span class="badge-dot"></span> Open to Work
         </div>
-    </section>
-   
-  
-    <!--  About  -->
-    <div class="parallax">
-    <!-- <section class="">Content Here</section> -->
-    <section class="about parallax-section" id="about">
-        <div class="max-width view">
-            <h2 class="title" style="text-align: left;">About Me</h2>
-            <div class="about-content">
-                <!-- <div class="column left">
-                    <img src="/MERN.jpg" alt="Profile Image 626x626">
-                </div> -->
-                <div class="column right">
-                    <div class="text">I'm Jamshed a <span class="typing-2"></span></div>
-                    <p>eager to embark on a dynamic career journey. Currently seeking an entry-level opportunity with an esteemed organization to apply my skills and amplify my learning in the field. Proficient in mastering new technologies, I bring a proactive approach to problem-solving and a dedication to continuous improvement.</p>
-                    <br>
-                    <div class="text">Why Collaborate With Me</div>
-                    <p>While I'm still in the early stages of my professional journey, I bring a strong dedication to effective communication and a genuine enthusiasm for understanding the unique challenges faced by clients. I prioritize investing the necessary time to grasp the intricacies of each project, ensuring that I can deliver solutions that meet and exceed expectations. While my experience may be limited, my commitment to learning and growth ensures that I approach every opportunity with passion and determination.</p>
-
-                    <a href="https://drive.google.com/file/d/15xjhHdG-J13OymJsg8IfLJc1YcL7mVjI/view?usp=drivesdk" target="blank">Download CV</a>
-                </div>
-            </div>
+        <h1 class="hero-title">
+          <span class="hero-greeting">Hello, I'm</span>
+          <span class="hero-name">Jamshed Shaukat</span>
+        </h1>
+        <div class="hero-role">
+          a <span class="typing-text" id="typingText"></span
+          ><span class="cursor-blink">|</span>
         </div>
-    </section>
-  </div>
-
-    <!-- Services -->
-    <section class="services" id="services">
-        <div class="max-width">
-            <h2 class="title">My services</h2>
-            <div class="serv-content">
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-laptop-code"></i>
-                        <div class="text">Frontend Development</div>
-                        <p class="para">Employing cutting-edge technologies such as HTML, CSS, and JavaScript to engineer visually captivating and user-centric interfaces</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fab fa-react"></i>
-                        <div class="text">React.js Development</div>
-                        <p>Using advanced React.js techniques, including Redux state management, to architect dynamic, responsive web apps that engage users, ensuring scalability and maintainability.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-user-secret"></i>
-                        <div class="text">Backend Development</div>
-                        <p>Utilizing MongoDB, Mongoose, and Express to architect scalable backend systems, build APIs, manage databases, and implement server-side logic for dynamic web applications.
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <p class="hero-description">
+          I build modern, scalable web applications with the MERN stack,
+          integrating Generative AI technologies to create seamless digital
+          experiences.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>View My Work</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <span>Get In Touch</span>
+          </a>
         </div>
+        <div class="hero-socials">
+          <a
+            href="https://github.com/JamhsedShaukat"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jamshed-shaukat/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:jamshed.gpcnust@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <a href="#about">
+          <div class="scroll-indicator">
+            <div class="scroll-dot"></div>
+          </div>
+          <span>Scroll Down</span>
+        </a>
+      </div>
     </section>
 
-  
-    <!-- Skills -->
-    <div class="parallax">
-    <section class="skills parallax-section view" id="skills">
-        <div class="max-width">
-            <h2 class="title">My Skills</h2>
-            <div class="skills-content ">
-                <div class="column left">
-                   
-                    <br>
-                    <div class="text">Project</div>
-                    <p>
-                        <li class="project">Financial Management Web App (React.js, Node.js, MongoDB, Express.js, html, css)</li>
-                        <li class="project">TasteBuds To-Go ( React.js, Node.js, MongoDB, Express.js, html, css)</li>
-                        <li class="project">PassWord Manager ( React.js, Node.js, MongoDB, Express.js, html, css)</li>
-                        <li class="project">Your NoteBook / Reminder app ( React.js, Node.js, MongoDB, Express.js, html, css)</li>
-                        <li class="project">Personal Portfolio (HTML, CSS, JavaScript, Bootstrap)</li>
-                        <li class="project">veterinary websites (HTML, CSS, JavaScript, Bootstrap)</li>
-                    
-                    </p>
-                    <br>
-                    <div class="text">Development Skills</div>
-                    <p>
-                        Proficient in HTML, CSS, JavaScript, Bootstrap, React.js, MongoDB, and Express.js. Skilled in crafting dynamic web applications with seamless user experiences. Experienced in modern development tools, ensuring scalable backend systems.
-                    </p>
-                </div>
-                <div class="column right">
-                    <div class="bars">
-                        <div class="info">
-                            <span>React.js</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="line react"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>HTML</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="line html"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>CSS</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="line css"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Bootstrap</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="line Bootstrap"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>JavaScript</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="line js"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>MongoDB</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="line mongodb"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Express.js</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line express"></div>
-                    </div>
-                </div>
-            </div>
+    <!-- Tech Stack Marquee -->
+    <section class="marquee-section">
+      <div class="marquee">
+        <div class="marquee-content">
+          <span class="marquee-item"
+            ><i class="fab fa-js-square"></i> JavaScript</span
+          >
+          <span class="marquee-item"
+            ><i class="fab fa-react"></i> React.js</span
+          >
+          <span class="marquee-item"><i class="fas fa-n"></i> Next.js</span>
+          <span class="marquee-item"
+            ><i class="fab fa-node-js"></i> Node.js</span
+          >
+          <span class="marquee-item"
+            ><i class="fas fa-server"></i> Express.js</span
+          >
+          <span class="marquee-item"
+            ><i class="fas fa-database"></i> MongoDB</span
+          >
+          <span class="marquee-item"
+            ><i class="fas fa-fire"></i> Firestore</span
+          >
+          <span class="marquee-item"
+            ><i class="fas fa-palette"></i> Tailwind CSS</span
+          >
+          <span class="marquee-item"
+            ><i class="fas fa-cube"></i> Redux Toolkit</span
+          >
+          <span class="marquee-item"
+            ><i class="fas fa-robot"></i> Generative AI</span
+          >
+          <span class="marquee-item"
+            ><i class="fas fa-microphone"></i> ElevenLabs API</span
+          >
+          <span class="marquee-item"><i class="fas fa-cloud"></i> AWS S3</span>
+          <span class="marquee-item"
+            ><i class="fas fa-code-branch"></i> Git &amp; GitHub</span
+          >
+          <span class="marquee-item"
+            ><i class="fas fa-shield-alt"></i> Clerk Auth</span
+          >
+          <span class="marquee-item"
+            ><i class="fas fa-bolt"></i> ShadCN UI</span
+          >
+          <!-- Duplicate for seamless loop -->
+          <span class="marquee-item"
+            ><i class="fab fa-js-square"></i> JavaScript</span
+          >
+          <span class="marquee-item"
+            ><i class="fab fa-react"></i> React.js</span
+          >
+          <span class="marquee-item"><i class="fas fa-n"></i> Next.js</span>
+          <span class="marquee-item"
+            ><i class="fab fa-node-js"></i> Node.js</span
+          >
+          <span class="marquee-item"
+            ><i class="fas fa-server"></i> Express.js</span
+          >
+          <span class="marquee-item"
+            ><i class="fas fa-database"></i> MongoDB</span
+          >
+          <span class="marquee-item"
+            ><i class="fas fa-fire"></i> Firestore</span
+          >
+          <span class="marquee-item"
+            ><i class="fas fa-palette"></i> Tailwind CSS</span
+          >
+          <span class="marquee-item"
+            ><i class="fas fa-cube"></i> Redux Toolkit</span
+          >
+          <span class="marquee-item"
+            ><i class="fas fa-robot"></i> Generative AI</span
+          >
+          <span class="marquee-item"
+            ><i class="fas fa-microphone"></i> ElevenLabs API</span
+          >
+          <span class="marquee-item"><i class="fas fa-cloud"></i> AWS S3</span>
+          <span class="marquee-item"
+            ><i class="fas fa-code-branch"></i> Git &amp; GitHub</span
+          >
+          <span class="marquee-item"
+            ><i class="fas fa-shield-alt"></i> Clerk Auth</span
+          >
+          <span class="marquee-item"
+            ><i class="fas fa-bolt"></i> ShadCN UI</span
+          >
         </div>
+      </div>
     </section>
-</div>
 
-  
-    
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-label">KNOW ABOUT ME</div>
+        <h2 class="section-title">
+          Full-Stack Developer
+          <span class="text-gradient">&amp; AI Integrator</span>
+        </h2>
+        <div class="about-grid">
+          <div class="about-image">
+            <div class="image-wrapper">
+              <img src="professional-pic-2-eid.jpg" alt="Jamshed Shaukat" />
+              <div class="image-border"></div>
+            </div>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-number">8+</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Years Exp</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">3.3</span>
+                <span class="stat-label">CGPA</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-content">
+            <p class="about-text">
+              I am a <strong>MERN Stack Developer</strong> with a strong focus
+              on building modern, scalable web applications. My expertise lies
+              in <strong>Next.js, React.js, Tailwind CSS, and ShadCN UI</strong>
+              for crafting responsive and intuitive frontends.
+            </p>
+            <p class="about-text">
+              On the backend, I work with
+              <strong>Express.js and MongoDB (Mongoose)</strong> to build robust
+              APIs and manage data effectively. I use
+              <strong>Redux Toolkit Query (RTQ)</strong> for efficient and
+              structured state management across applications.
+            </p>
+            <p class="about-text">
+              In addition to full-stack development, I have firsthand experience
+              integrating
+              <strong>Generative AI technologies</strong> such as voice cloning
+              and text-to-speech using the <strong>ElevenLabs API</strong>,
+              along with implementing sentiment analysis features in real-world
+              applications.
+            </p>
+            <div class="about-details">
+              <div class="detail-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                  <strong>BS Computer Science (CGPA 3.302)</strong>
+                  <span>UET Lahore (2021 &ndash; 2025)</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <strong>Lahore, Pakistan</strong>
+                  <span>Available globally</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <strong>jamshed.gpcnust@gmail.com</strong>
+                  <span>Reach out anytime</span>
+                </div>
+              </div>
+            </div>
+            <a
+              href="https://drive.google.com/file/d/15xjhHdG-J13OymJsg8IfLJc1YcL7mVjI/view?usp=drivesdk"
+              target="_blank"
+              class="btn btn-primary"
+              rel="noopener"
+            >
+              <i class="fas fa-download"></i> Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Projects -->
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="section-label">WORK EXPERIENCE</div>
+        <h2 class="section-title">
+          Where I've <span class="text-gradient">Made Impact</span>
+        </h2>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Software Engineer</h3>
+                  <span class="timeline-company"
+                    >Wanile Technologies &mdash; Full-time</span
+                  >
+                </div>
+                <span class="timeline-date">Dec 2024 &ndash; Present</span>
+              </div>
+              <ul class="timeline-details">
+                <li>
+                  Building and maintaining web applications using Next.js and
+                  React.js
+                </li>
+                <li>
+                  Collaborating with cross-functional teams to deliver scalable
+                  UI features
+                </li>
+                <li>
+                  Implementing reusable components and improving performance
+                </li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Next.js</span><span>React.js</span><span>JavaScript</span>
+                <span>Tailwind CSS</span><span>API Integration</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Software Engineer</h3>
+                  <span class="timeline-company"
+                    >Kitabh &mdash; Full-time (Remote)</span
+                  >
+                </div>
+                <span class="timeline-date">Mar 2025 &ndash; Jan 2026</span>
+              </div>
+              <ul class="timeline-details">
+                <li>
+                  Integrated ElevenLabs Voice API for voice cloning &amp; TTS
+                  with SSML-style formatting
+                </li>
+                <li>
+                  Built audio upload workflows (direct upload, web recording,
+                  AI-generated) with AWS S3 storage
+                </li>
+                <li>
+                  Developed custom audio player with speed, volume, seek, and
+                  playback controls
+                </li>
+                <li>
+                  Created dynamic feed algorithms: Default Feed, Following-Based
+                  Feed, Category-Specific Feed
+                </li>
+                <li>
+                  Optimized performance through smart sorting and filtering
+                  logic
+                </li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Next.js</span><span>React.js</span
+                ><span>Tailwind CSS</span><span>ShadCN UI</span>
+                <span>ElevenLabs API</span><span>AWS S3</span
+                ><span>Redux Toolkit</span><span>Node.js</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Web Developer</h3>
+                  <span class="timeline-company"
+                    >NovaGenius &mdash; Internship (Remote)</span
+                  >
+                </div>
+                <span class="timeline-date">Jun 2024 &ndash; Aug 2024</span>
+              </div>
+              <ul class="timeline-details">
+                <li>Developed responsive web pages and UI components</li>
+                <li>Collaborated on feature delivery and bug fixes</li>
+                <li>Improved UX with clean layouts and reusable styling</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                <span>React.js</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Freelance Web Developer</h3>
+                  <span class="timeline-company">Self-Employed</span>
+                </div>
+                <span class="timeline-date">1 Year</span>
+              </div>
+              <ul class="timeline-details">
+                <li>
+                  Delivered websites and web apps for clients across niches
+                </li>
+                <li>Handled end-to-end development, deployment, and support</li>
+                <li>
+                  Focused on performance, responsive design, and SEO basics
+                </li>
+              </ul>
+              <div class="timeline-tags">
+                <span>React.js</span><span>Next.js</span
+                ><span>Tailwind CSS</span> <span>Node.js</span
+                ><span>MongoDB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
     <section class="projects" id="projects">
-        <div class="max-width">
-            <h2 class="title">My Projects</h2>
-            <div class="carousel owl-carousel">
-                <div class="card">
-                    <div class="box">
-                        <img src="/PasswordManager.jpg" alt="password manager pic">
-                        <div class="text">password manager</div>
-                        <p>A cutting-edge web app utilizing React.js, MongoDB, and Express.js for secure, scalable data storage.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="/portfolio.jpeg" alt="">
-                        <div class="text">Portfolio</div>
-                        <p>A showcase of my work, skills, and achievements in web development</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="/Notebook.jpeg" alt="">
-                        <div class="text">Keeping Notes</div>
-                        <p>A secure note-taking web app for organizing and managing your ideas.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="/NewsApp.jpeg" alt="">
-                        <div class="text">NewsWebApp</div>
-                        <p>Stay informed with real-time news updates tailored to your preferences</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="/PinterestClone.png" alt="">
-                        <div class="text">Pinterest clone</div>
-                        <p>Discover and curate inspiration with this visually engaging platform.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="/FoodOdering.png" alt="">
-                        <div class="text">Online-Food</div>
-                        <p>Satisfy your cravings with a seamless food ordering experience.</p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="section-label">CASE STUDIES</div>
+        <h2 class="section-title">
+          Featured <span class="text-gradient">Projects</span>
+        </h2>
+
+        <!-- Project 1: Kitabh -->
+        <div class="project-card reveal" data-project="1">
+          <div class="project-preview">
+            <div class="preview-wrapper">
+              <iframe
+                src="https://kitabh.com/feed/view/reading"
+                loading="lazy"
+                title="Kitabh Preview"
+                sandbox="allow-scripts allow-same-origin"
+              ></iframe>
+              <div class="preview-overlay">
+                <a
+                  href="https://kitabh.com/feed/view/reading"
+                  target="_blank"
+                  class="preview-link"
+                  rel="noopener"
+                >
+                  <i class="fas fa-external-link-alt"></i> Visit Live Site
+                </a>
+              </div>
             </div>
+          </div>
+          <div class="project-info">
+            <div class="project-number">01</div>
+            <span class="project-type">WEB APP</span>
+            <h3 class="project-title">Kitabh</h3>
+            <p class="project-desc">
+              Arabic writing &amp; publishing platform with ElevenLabs Voice API
+              integration for voice cloning and TTS. Features custom audio
+              player, dynamic feed algorithms (Default, Following-Based,
+              Category-Specific), and AWS S3 storage.
+            </p>
+            <div class="project-tags">
+              <span>Next.js</span><span>React.js</span><span>Tailwind CSS</span
+              ><span>ShadCN UI</span> <span>ElevenLabs API</span
+              ><span>AWS S3</span><span>Redux Toolkit</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://kitabh.com/feed/view/reading"
+                target="_blank"
+                class="btn btn-primary btn-sm"
+                rel="noopener"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
         </div>
+
+        <!-- Project 2: Go-Legal AI -->
+        <div class="project-card reverse reveal" data-project="2">
+          <div class="project-preview">
+            <div class="preview-wrapper">
+              <iframe
+                src="https://go-legal.ai/"
+                loading="lazy"
+                title="Go-Legal AI Preview"
+                sandbox="allow-scripts allow-same-origin"
+              ></iframe>
+              <div class="preview-overlay">
+                <a
+                  href="https://go-legal.ai/"
+                  target="_blank"
+                  class="preview-link"
+                  rel="noopener"
+                >
+                  <i class="fas fa-external-link-alt"></i> Visit Live Site
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-number">02</div>
+            <span class="project-type">AI APP</span>
+            <h3 class="project-title">Go-Legal AI</h3>
+            <p class="project-desc">
+              AI-powered legal assistant chatbot providing instant legal
+              guidance. Features conversational AI interface for seamless
+              interaction, built with modern web technologies and Zapier
+              automation backend for intelligent legal Q&amp;A.
+            </p>
+            <div class="project-tags">
+              <span>AI Chatbot</span><span>Legal Tech</span><span>Zapier</span
+              ><span>Web App</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://go-legal.ai/"
+                target="_blank"
+                class="btn btn-primary btn-sm"
+                rel="noopener"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Documind -->
+        <div class="project-card reveal" data-project="3">
+          <div class="project-preview">
+            <div class="preview-wrapper preview-placeholder">
+              <div class="placeholder-content">
+                <img src="docuMind.png" alt="Documind preview" />
+              </div>
+              <div class="preview-overlay">
+                <a
+                  href="https://documind.website/"
+                  target="_blank"
+                  class="preview-link"
+                  rel="noopener"
+                >
+                  <i class="fas fa-external-link-alt"></i> Visit Live Site
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-number">03</div>
+            <span class="project-type">WEB APP</span>
+            <h3 class="project-title">Documind</h3>
+            <p class="project-desc">
+              Document intelligence web app for analyzing, organizing, and
+              summarizing content with a clean, responsive experience.
+            </p>
+            <div class="project-tags">
+              <span>Next.js</span><span>React.js</span><span>Tailwind CSS</span>
+              <span>Web App</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://documind.website/"
+                target="_blank"
+                class="btn btn-primary btn-sm"
+                rel="noopener"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Hotel Management System -->
+        <div class="project-card reveal" data-project="4">
+          <div class="project-preview">
+            <div class="preview-wrapper preview-placeholder">
+              <div class="placeholder-content">
+                <img src="hms.jpg" alt="Hotel management system preview" />
+              </div>
+              <div class="preview-overlay">
+                <span class="preview-link">
+                  <i class="fas fa-desktop"></i> Dashboard App
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-number">04</div>
+            <span class="project-type">WEB APP</span>
+            <h3 class="project-title">Hotel Management System</h3>
+            <p class="project-desc">
+              Comprehensive hotel management platform with modules for room
+              services, staff roles, food &amp; drink services, housekeeping,
+              customer support, subscription plans, and calendar activities.
+              Features dynamic components with Framer Motion animations.
+            </p>
+            <div class="project-tags">
+              <span>Next.js</span><span>React.js</span><span>Tailwind CSS</span
+              ><span>ShadCN UI</span> <span>Clerk Auth</span
+              ><span>Redux Toolkit</span><span>Framer Motion</span
+              ><span>Zod</span>
+            </div>
+            <div class="project-links">
+              <span class="btn btn-outline btn-sm">
+                <i class="fas fa-desktop"></i> Landing Page
+              </span>
+              <span class="btn btn-outline btn-sm">
+                <i class="fas fa-user-shield"></i> Admin
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: FoodOnline -->
+        <div class="project-card reverse reveal" data-project="5">
+          <div class="project-preview">
+            <div class="preview-wrapper preview-placeholder">
+              <div class="placeholder-content">
+                <img src="food-odering.png" alt="FoodOnline preview" />
+              </div>
+              <div class="preview-overlay">
+                <a
+                  href="https://food-online-seven.vercel.app/"
+                  target="_blank"
+                  class="preview-link"
+                  rel="noopener"
+                >
+                  <i class="fas fa-shopping-cart"></i> Food Ordering
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-number">05</div>
+            <span class="project-type">WEB APP</span>
+            <h3 class="project-title">FoodOnline</h3>
+            <p class="project-desc">
+              Full-stack online food ordering application with categorized food
+              items, dynamic cart management, and seamless order placement.
+              Optimized for mobile and desktop with reusable components for
+              scalability.
+            </p>
+            <div class="project-tags">
+              <span>React.js</span><span>Tailwind CSS</span
+              ><span>ShadCN UI</span> <span>React Hook Form</span
+              ><span>Vercel</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://food-online-seven.vercel.app/"
+                target="_blank"
+                class="btn btn-primary btn-sm"
+                rel="noopener"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: MyDrive -->
+        <div class="project-card reverse reveal" data-project="6">
+          <div class="project-preview">
+            <div class="preview-wrapper preview-placeholder">
+              <div class="placeholder-content">
+                <img src="my-drive.png" alt="MyDrive preview" />
+              </div>
+              <div class="preview-overlay">
+                <a
+                  href="https://my-drive-eight.vercel.app/sign-in"
+                  target="_blank"
+                  class="preview-link"
+                  rel="noopener"
+                >
+                  <i class="fas fa-folder-open"></i> File Storage
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-number">06</div>
+            <span class="project-type">WEB APP</span>
+            <h3 class="project-title">MyDrive</h3>
+            <p class="project-desc">
+              Cloud-based file storage and sharing platform for securely
+              uploading, managing, and accessing documents. Features user
+              authentication, collection management, editing capabilities, and
+              responsive design.
+            </p>
+            <div class="project-tags">
+              <span>Next.js</span><span>React.js</span><span>Tailwind CSS</span>
+              <span>ShadCN UI</span><span>Clerk Auth</span><span>Vercel</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://my-drive-eight.vercel.app/sign-in"
+                target="_blank"
+                class="btn btn-primary btn-sm"
+                rel="noopener"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8: iNoteBook -->
+        <div class="project-card reveal" data-project="8">
+          <div class="project-preview">
+            <div class="preview-wrapper preview-placeholder">
+              <div class="placeholder-content">
+                <img src="inote-book.png" alt="iNoteBook preview" />
+              </div>
+              <div class="preview-overlay">
+                <a
+                  href="https://inotebook-lemon.vercel.app/login"
+                  target="_blank"
+                  class="preview-link"
+                  rel="noopener"
+                >
+                  <i class="fas fa-sticky-note"></i> Note-Taking App
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-number">08</div>
+            <span class="project-type">WEB APP</span>
+            <h3 class="project-title">iNoteBook</h3>
+            <p class="project-desc">
+              Dynamic note-taking application with secure authentication using
+              JWT tokens. Features full CRUD operations for notes, MongoDB Atlas
+              for efficient data storage, and a responsive interface built with
+              React.js and Bootstrap.
+            </p>
+            <div class="project-tags">
+              <span>React.js</span><span>Express.js</span
+              ><span>MongoDB Atlas</span> <span>JWT</span><span>Bootstrap</span
+              ><span>RESTful API</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://inotebook-lemon.vercel.app/login"
+                target="_blank"
+                class="btn btn-primary btn-sm"
+                rel="noopener"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="section-label">TECH STACK</div>
+        <h2 class="section-title">
+          Tools I Ship <span class="text-gradient">Production Code</span> With
+        </h2>
 
-    <div class="parallax">
-    <section class="contact parallax-section " id="contact">
-        <div class="max-width view">
-            <h2 class="title">Contact Me</h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Reach Out for Opportunities</div>
-                    <p>
-                        I'm eager to explore potential collaborations and job opportunities. Whether you have exciting projects or job openings in mind, feel free to reach out. Drop me an email with your queries or job offers, and I'll gladly respond and arrange a discussion. Let's connect and bring your visions to life together..</p>
-                    <div class="icons">
-
-                        <a href="https://instagram.com/aistscience">
-                            <div class="row">
-                                <i class="fas fa-user"></i></i>
-                                <div class="info">
-                                    <div class="head">Name</div>
-                                    <div class="sub-title"><a href="https://aistechx.com/"
-                                            style="text-decoration: none; color: #333;"> Jamshed Shaukat</a></div>
-                                </div>
-                            </div>
-                        </a>
-
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">&nbsp;Address</div>
-                                <div class="sub-title">&nbsp;Lahore , Pakistan</div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title"><a href="mailto:#" style="text-decoration: none; color: #333;">
-                                    jamshed.gpcnust@gmail.com </a></div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <i class="fas fa-language"></i>
-                            <div class="info">
-                                <div class="head">Language Known</div>
-                                <div class="sub-title">Urdu, English , Panjabi</div>
-                            </div>
-                        </div>
-
-                        <br>
-
-                        <!-- Social -->
-                        <div class="social-menu" >
-                            <ul class="social-menu">
-                                <li><a href="https://github.com/JamhsedShaukat"><i class="fab fa-github"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/jamshed-shaukat/"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Reach --> 
-                <div class="column right ">
-                    <div class="text">Message me</div>
-                    <form action="#">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" placeholder="Your Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Your Email" required>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit">Send message</button>
-                        </div>
-                    </form>
-                </div>
+        <div class="skills-grid">
+          <div class="skill-category reveal">
+            <h3><i class="fas fa-paint-brush"></i> Frontend</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-react"></i><span>React.js</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-n"></i><span>Next.js</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-js-square"></i><span>JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-palette"></i><span>Tailwind CSS</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-bolt"></i><span>ShadCN UI</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-bootstrap"></i><span>Bootstrap</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-html5"></i><span>HTML5</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-css3-alt"></i><span>CSS3</span>
+              </div>
             </div>
-        </div>
-    </section>
-    </div>
+          </div>
 
+          <div class="skill-category reveal">
+            <h3><i class="fas fa-server"></i> Backend</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-node-js"></i><span>Node.js</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-server"></i><span>Express.js</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database"></i><span>MongoDB</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-fire"></i><span>Firestore</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-key"></i><span>JWT Auth</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-plug"></i><span>REST APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3><i class="fas fa-tools"></i> State &amp; Tools</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fas fa-cube"></i><span>Redux Toolkit</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-exchange-alt"></i><span>RTK Query</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-sync"></i><span>SWR</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-git-alt"></i><span>Git</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-github"></i><span>GitHub</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-cloud"></i><span>Vercel</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3><i class="fas fa-robot"></i> AI &amp; APIs</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fas fa-microphone"></i><span>ElevenLabs</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-brain"></i><span>OpenAI API</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-cloud"></i><span>AWS S3</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-shield-alt"></i><span>Clerk Auth</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-users"></i><span>Liveblocks</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-chart-bar"></i><span>Sentry</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-label">WHAT I DO</div>
+        <h2 class="section-title">
+          Services I <span class="text-gradient">Provide</span>
+        </h2>
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>Frontend Development</h3>
+            <p>
+              Building responsive, pixel-perfect UIs with React.js, Next.js,
+              Tailwind CSS, and ShadCN UI for seamless user experiences.
+            </p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon"><i class="fas fa-server"></i></div>
+            <h3>Backend Development</h3>
+            <p>
+              Architecting scalable backend systems with Express.js, MongoDB,
+              and Firestore &mdash; robust APIs and efficient data management.
+            </p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon"><i class="fas fa-robot"></i></div>
+            <h3>AI Integration</h3>
+            <p>
+              Integrating Generative AI technologies &mdash; voice cloning, TTS,
+              sentiment analysis &mdash; using ElevenLabs API and OpenAI GPT-4.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-label">TESTIMONIALS</div>
+        <h2 class="section-title">
+          What My Client <span class="text-gradient">Says</span>
+        </h2>
+        <div class="testimonial-grid">
+          <!-- Screenshot Review -->
+          <div class="testimonial-card reveal">
+            <div class="testimonial-badge">
+              <i class="fas fa-comment-dots"></i> Client Message
+            </div>
+            <div class="testimonial-screenshot">
+              <img
+                src="client-review.jpeg"
+                alt="Client review message screenshot"
+                loading="lazy"
+              />
+            </div>
+            <div class="testimonial-footer">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="testimonial-label">Verified Client Review</span>
+            </div>
+          </div>
+
+          <!-- Audio Review -->
+          <div class="testimonial-card reveal">
+            <div class="testimonial-badge">
+              <i class="fas fa-microphone"></i> Voice Review
+            </div>
+            <div class="testimonial-audio-section">
+              <div class="audio-visual">
+                <div class="audio-icon-wrapper">
+                  <i class="fas fa-headphones"></i>
+                </div>
+                <div class="audio-info">
+                  <h4>Client Voice Review</h4>
+                  <p>
+                    Listen to what my client has to say about working together
+                  </p>
+                </div>
+              </div>
+              <div class="audio-player-wrapper">
+                <audio controls preload="metadata" class="audio-player">
+                  <source src="client-review_ksv99rvx.ogg" type="audio/ogg" />
+                  <source src="client-review.mp3" type="audio/mpeg" />
+                  <source src="client-review.wav" type="audio/wav" />
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+            <div class="testimonial-footer">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="testimonial-label">Verified Client Review</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-left">
+            <div class="section-label">LET'S CONNECT</div>
+            <h2 class="section-title" style="text-align: left">
+              Let's Make It<br /><span class="text-gradient">Happen!</span>
+            </h2>
+            <p class="contact-desc">
+              I'm available for full-time roles &amp; freelance projects.
+              Whether you have exciting projects or job opportunities, let's
+              connect and bring your vision to life.
+            </p>
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:jamshed.gpcnust@gmail.com"
+                    >jamshed.gpcnust@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <span class="contact-label">Phone</span>
+                  <a href="tel:+923212808985">+92 321 2808985</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <span class="contact-label">Location</span>
+                  <span>Lahore, Pakistan</span>
+                </div>
+              </div>
+            </div>
+            <div class="contact-socials">
+              <a
+                href="https://github.com/JamhsedShaukat"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/jamshed-shaukat/"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:jamshed.gpcnust@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="John Doe"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Your Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="john@example.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Project Inquiry"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell me about your project..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
-    <footer>
-        <span>
-            <a href="https://www.linkedin.com/in/jamshed-shaukat"> JamhsedShaukat</a> | <span
-                class="far fa-copyright"></span> 2022 All Rights Reserved. Privacy Policy
-        </span>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <a href="#hero" class="footer-logo">
+              <span class="logo-bracket">&lt;</span>JS<span
+                class="logo-bracket"
+              >
+                /&gt;</span
+              >
+            </a>
+            <p>Building digital experiences with modern web technologies.</p>
+          </div>
+          <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2026 Jamshed Shaukat. All Rights Reserved.</span>
+          <div class="footer-socials">
+            <a
+              href="https://github.com/JamhsedShaukat"
+              target="_blank"
+              rel="noopener"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/jamshed-shaukat/"
+              target="_blank"
+              rel="noopener"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </footer>
 
-    
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="portfolio.js"></script>
-   
-
-</body>
-
+  </body>
 </html>
